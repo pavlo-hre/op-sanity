@@ -4,6 +4,16 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'metaTitle',
+      title: 'Meta Title',
+      type: 'string',
+    },
+    {
+      name: 'metaDescription',
+      title: 'Meta Description',
+      type: 'string',
+    },
+    {
       name: 'title',
       title: 'Preview Title*',
       type: 'string',
