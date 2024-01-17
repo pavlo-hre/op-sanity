@@ -14,6 +14,11 @@ export default {
       type: 'string',
     },
     {
+      name: 'keywords',
+      title: 'Keywords for Google News (comma separated)',
+      type: 'string',
+    },
+    {
       name: 'title',
       title: 'Preview Title*',
       type: 'string',
