@@ -4,6 +4,18 @@ export default {
   type: 'document',
   fields: [
     {
+      name: 'audience',
+      title: 'Target Audience',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Restaurants', value: 'restaurant' },
+          { title: 'Suppliers', value: 'supplier' },
+        ],
+        layout: 'radio',
+      },
+    },
+    {
       name: 'metaTitle',
       title: 'Meta Title',
       type: 'string',
@@ -47,6 +59,7 @@ export default {
       title: 'Preview text',
       type: 'string',
     },
+
     {
       name: 'mainImage',
       title: 'Preview image',
@@ -55,6 +68,11 @@ export default {
         isHighlighted: true,
         hotspot: true,
       },
+    },
+    {
+      name: 'mainImageAlt',
+      title: 'Preview image alt text',
+      type: 'string',
     },
     {
       name: 'body',
@@ -77,13 +95,16 @@ export default {
       type: 'boolean',
     },
   ],
-
+  initialValue: {
+    audience: 'restaurant', // Default value
+  },
   preview: {
     select: {
       title: 'title',
       author: 'author',
       media: 'mainImage',
       updated: 'publishedAt',
+      audience: 'audience'
     },
   },
 }
