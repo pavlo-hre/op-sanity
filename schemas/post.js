@@ -95,9 +95,6 @@ export default {
       type: 'boolean',
     },
   ],
-  initialValue: {
-    audience: 'restaurant', // Default value
-  },
   preview: {
     select: {
       title: 'title',
